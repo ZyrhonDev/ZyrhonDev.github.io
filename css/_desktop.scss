@@ -1,0 +1,61 @@
+body {
+    background-image: url(../img/backgroundImg.jpg);
+    background-size: cover;
+}
+
+header {
+    height: 8rem;
+    width: 60%;
+    background-position-x: 10rem;
+    background-position-y: -16rem;
+
+    h1 {
+        font-family: $headFont;
+        position: relative;
+        top: 4.7rem;
+        color: rgb(223, 127, 17);
+    }
+}
+/* 
+* Adjusting width for Desktop.
+*/
+main {
+    width: 60%;
+        /*
+        * Adjusting the second grid so img & p is next to eachother in desktop.
+        */
+        article {
+                .leftMain {
+                    grid-column-start: 1;
+                    grid-column-end: 7;
+                }
+                /* 
+                * I have to make the p that is supposed to be left absolute
+                * to make it inline instead of block so it doesn't create a block
+                * where it is according to the html.
+                */
+                #leftP {
+                    position: absolute;
+                }
+
+                .rightMain {
+                    grid-column-start: 7;
+                    grid-column-end: 13;
+                }
+
+                h2 {
+                    font-family: $headFont;
+                    margin: 0;
+                    color: rgb(0, 255, 255);
+                    position: absolute;
+                    left: 0.5rem;
+                }
+        }
+}
+
+footer {
+    position: fixed;
+    top: 0rem;
+    width: 18%;
+    margin: 0.5rem 0.5rem;
+    }
