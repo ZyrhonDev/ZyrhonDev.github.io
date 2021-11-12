@@ -1,18 +1,16 @@
-header {
-    height: 10%;
+/*
+* Adjusting sizes for Tablet.
+*/
+main 
+{
     width: 90%;
-}
-main {
-    width: 90%;
-        /*
-        * Adjusting where the main content (articles) will be in the grid aswell as
-        * setting up another grid to adjust content within the articles if needed.
-        */
-        article {
+        article 
+        {
             width: 100%;
         }          
 }
 
-footer {
+footer 
+{
     width: 90%;
 }
