@@ -8,23 +8,22 @@ body
 */
 main 
 {
-    width: 60%;
+    width: 70%;
     /*
     * First page settings.
     */
     #sectionOne 
     {
         background-image: none;
-        height: 100vh;
         /*
         * H1 for the site. "Oskar Lundberg"
         */
         #siteHead 
         {
-            font-size: 12rem;
+            font-size: 8rem;
             .lastName 
             {
-                bottom: 7rem;
+                bottom: 5rem;
             }
         }
     }
@@ -59,7 +58,7 @@ main
 
 footer 
 {
-    width: 60%;
+    width: 70%;
         .far 
         {
             display: none;
@@ -74,6 +73,6 @@ footer
         {
             display: flex;
             justify-content: space-between;
-            margin: 1rem;
+            margin: 0.5rem;
         }
 }

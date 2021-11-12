@@ -5,6 +5,14 @@
     @import 'tablet';
 }
 
+@media screen and (min-width: 769px) {
+    @import 'laptop';   
+}
+
 @media screen and (min-width: 1026px) {
     @import 'desktop';
+}
+
+@media screen and (min-width: 1201px) {
+    @import 'big';
 }

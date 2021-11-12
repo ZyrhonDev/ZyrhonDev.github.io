@@ -1,0 +1,29 @@
+body 
+{
+    background-image: url(../img/backgroundImg.jpg);
+    background-size: cover;
+}
+ 
+
+        main 
+{
+    width: 70%;
+    #sectionOne 
+    {
+        background-image: none;
+        #siteHead 
+        {
+            font-size: 6rem;
+
+            .lastName 
+            {
+                bottom: 4rem;
+            }
+        }
+    }   
+}
+
+footer 
+{
+    width: 70%;
+}

@@ -1,0 +1,27 @@
+main 
+{
+    width: 60%;
+    /*
+    * First page settings.
+    */
+    #sectionOne 
+    {
+        background-image: none;
+        /*
+        * H1 for the site. "Oskar Lundberg"
+        */
+        #siteHead 
+        {
+            font-size: 12rem;
+            .lastName 
+            {
+                bottom: 7rem;
+            }
+        }
+    }
+}
+
+footer 
+{
+    width: 60%;
+}
