@@ -1,0 +1,153 @@
+body 
+{
+    background-color: grey;
+}
+/* 
+* Setting up main Grid layout.
+*/
+main 
+{
+    width: 98%;
+    margin: 0.5rem auto;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+        /*
+        * Second grid layout.
+        */
+        #sectionOne, #sectionTwo 
+        {
+            grid-column-start: 1;
+            grid-column-end: 13;
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+        }
+
+        div 
+        {
+            grid-column-start: 1;
+            grid-column-end: 13;
+            margin: auto auto;
+        }
+
+        #sectionOne 
+        {
+            grid-column-start: 1;
+            grid-column-end: 13;
+            background-image: url(../img/backgroundImg.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100vh;
+            
+            #siteHead 
+            {
+                font-family: $headFont;
+                color:rgb(228, 228, 228);
+                text-align: center;
+                font-size: 6rem;
+                margin: auto auto;
+                z-index: 2;
+                background-color: rgba(0, 0, 0, 0.5);
+                border: 1px solid black;
+                border-radius: 1rem;
+
+                .lastName 
+                {
+                    position: relative;
+                    opacity: 50%;
+                    bottom: 4rem;
+                    z-index: 1;
+                }
+            }
+            .scrollDown 
+            {
+                position: absolute;
+                left: 50%;
+                bottom:0;
+                color: white;
+            }
+        }
+        
+        /*
+        * Adjusting where the main content (articles) will be in the grid aswell as
+        * setting up another grid to adjust content within the articles if needed.
+        */
+        article 
+        {
+            background-color: rgb(172, 172, 172);
+            grid-column-start: 1;
+            grid-column-end: 13;
+            border: 1px solid black;
+            width: 100%;
+            margin: 0.5rem 0;
+            display: grid;
+            position: relative;
+            grid-template-columns: repeat(12, 1fr);
+            
+                h2 
+                {
+                    font-family: $headFont;
+                    margin: 0;
+                    color: rgb(0, 255, 255);
+                    position: absolute;
+                }
+                
+                img 
+                {
+                    margin: 0;
+                    grid-column-start: 1;
+                    grid-column-end: 13;
+                }
+
+                p 
+                {
+                    font-family: $baseFont;
+                    color: rgb(0, 0, 0);
+                    margin: 1rem;
+                    grid-column-start: 1;
+                    grid-column-end: 13;
+                }
+        }
+}
+
+footer 
+{
+    background-color: rgb(223, 127, 17);
+    border: 1px solid black;
+    width: 98%;
+    margin: 0.5rem auto;
+    font-family: $baseFont;
+
+    i 
+    {
+        float: left;
+        margin: 0 0.5rem 0 1rem;
+        position: relative;
+        top: 0.2rem;
+    }
+    
+    h3 
+    {
+        font-family: $headFont;
+    }
+
+    ul 
+    {
+        list-style: none;
+        margin-left: 1rem;
+        padding: 0;
+
+        li 
+        {
+            a {
+                color: rgb(16, 3, 139);
+                font-weight: bold;
+                &:hover {
+                    color: rgb(0, 255, 255);
+                }
+            }
+        }
+    }
+
+
+}
+

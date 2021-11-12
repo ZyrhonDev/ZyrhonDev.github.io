@@ -1,0 +1,10 @@
+@import 'variables';
+@import 'base';
+
+@media screen and (min-width: 481px) {
+    @import 'tablet';
+}
+
+@media screen and (min-width: 1026px) {
+    @import 'desktop';
+}
