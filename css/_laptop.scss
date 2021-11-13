@@ -5,11 +5,15 @@ body
 }
  
 
-        main 
+    main 
 {
     width: 70%;
     #sectionOne 
     {
+        /*
+        * Removing the background on sectionOne because 
+        * it is under body from now on.
+        */
         background-image: none;
         #siteHead 
         {

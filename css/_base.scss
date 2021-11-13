@@ -2,6 +2,10 @@ body
 {
     background-color: grey;
 }
+
+html {
+    scroll-behavior: smooth;
+}
 /* 
 * Setting up main Grid layout.
 */
@@ -43,7 +47,7 @@ main
                 font-family: $headFont;
                 color:rgb(228, 228, 228);
                 text-align: center;
-                font-size: 6rem;
+                font-size: 4rem;
                 margin: auto auto;
                 z-index: 2;
                 background-color: rgba(0, 0, 0, 0.5);
@@ -54,7 +58,7 @@ main
                 {
                     position: relative;
                     opacity: 50%;
-                    bottom: 4rem;
+                    bottom: 2.5rem;
                     z-index: 1;
                 }
             }
